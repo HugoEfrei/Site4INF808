@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-    <body>
-    <h1>Connexion</h1>
-    <form>
-        <label>Identifiant :</label><br>
-        <input id="username" type="text" placeholder="Identifiant" required><br>
-        <label>Mot de passe :</label><br>
-        <input id="pwd" type="password" placeholder="Mot de passe" required><br> 
-        <button type="button" id="btn">Login</button>
-        <p id="jsontext"></p>
-    </form>
+
+    <script 
+        src="https://code.jquery.com/jquery-3.7.1.js" 
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+        crossorigin="anonymous">
+    </script>
     
     <script src="script.js"></script>
+    
+    <body>
+    <h1>Connexion</h1>
+    <form id="myForm">
+        <label>Identifiant :</label><br>
+        <input name="Identifiant" type="text"><br>
+        <label>Mot de passe :</label><br>
+        <input name="Mot_de_passe" type="password"><br> 
+        <button onclick="SubForm()" type="button">Login</button>
+    </form>
+    
 
     </body>
 
