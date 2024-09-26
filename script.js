@@ -1,6 +1,6 @@
 function SubForm (){
     $.ajax({
-        url: API_LINK,
+        url: "${{ secrets.API_LINK}}",
         type:'post',
         data:$("#myForm").serializeArray(),
         success: function(){
