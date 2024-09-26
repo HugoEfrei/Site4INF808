@@ -9,5 +9,5 @@ btn.addEventListener("click", function(){
         "username": username.value,
         "pwd": pwd.value
     }
-    jsonText.innerHTML = JSON.stringify(data)
+    jsonText.innerHTML = JSON.stringify(data);
 })
