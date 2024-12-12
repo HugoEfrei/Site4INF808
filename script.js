@@ -1,13 +1,13 @@
 function SubForm (){
     $.ajax({
-        url: API_LINK,
+        url:'https://api.apispreadsheets.com/data/z7jFIdeEkwdCy7dv/',
         type:'post',
         data:$("#myForm").serializeArray(),
         success: function(){
-            alert("Form Data Submitted :)")
-          },
-          error: function(){
-            alert("There was an error :(")
-          }
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
     });
 }
